@@ -1,9 +1,3 @@
-/**
- * @author      : MasrulHuda (MasrulHuda@Masruls-MBP)
- * @file        : quick_sort
- * @created     : Saturday May 07, 2022 23:28:55 CDT
- */
-
 #include "base.h"
 
 class QSort: public Base {

@@ -1,9 +1,3 @@
-/**
- * Author      : Masrul Huda (mail2masrul@gmail.com)
- * Host        : iMacPro@Swalm
- * Created     : Saturday May 14, 2022 20:14:43 CDT
- */
-
 #include<iostream>
 #include<vector>
 

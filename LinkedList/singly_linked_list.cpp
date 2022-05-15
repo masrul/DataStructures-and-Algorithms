@@ -1,9 +1,3 @@
-/**
- * @author      : MasrulHuda (MasrulHuda@Masruls-MBP)
- * @file        : singly_linked_list
- * @created     : Wednesday May 11, 2022 00:14:44 CDT
- */
-
 #include<iostream>
 #include<queue>
 

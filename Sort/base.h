@@ -1,9 +1,3 @@
-/**
- * @author      : Masrul Huda (mail2masrul@gmail.com)
- * @file        : base
- * @created     : Monday May 09, 2022 16:14:00 CDT
- */
-
 #ifndef BASE_H
 
 #define BASE_H

@@ -1,9 +1,3 @@
-/**
- * @author      : MasrulHuda (MasrulHuda@Masruls-MBP)
- * @file        : insertion_sort
- * @created     : Monday May 09, 2022 21:53:40 CDT
- */
-
 #include "base.h"
 
 class ISort: public Base{

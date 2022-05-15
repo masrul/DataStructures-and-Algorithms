@@ -31,6 +31,7 @@ public:
     void print();
     bool empty();
     void sort();
+    void reverse();
 private:
     Node *head;
 };
@@ -125,6 +126,20 @@ void SLL::sort(){
     std::cout << "Yet to be implemented!!!\n";
 }
 
+void SLL::reverse(){
+    Node* current = head; 
+    Node* prev = nullptr; 
+    Node* next = nullptr; 
+
+    while(current !=nullptr){
+        next = current->next;
+        current->next = prev; 
+        prev = current; 
+        current = next;
+    }
+    head = prev;
+}
+
 int main(){
 
     SLL  sll;
@@ -133,6 +148,8 @@ int main(){
     sll.push_front(-1);
     sll.push_front(-2);
     
+    sll.print();
+    sll.reverse(); 
     sll.print();
     sll.clear();
     sll.print();

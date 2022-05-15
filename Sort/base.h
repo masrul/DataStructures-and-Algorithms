@@ -16,8 +16,7 @@
 #include <iomanip>
 #include<cassert>
 #include<cmath>
-#define RANDMAX 1000
-
+#define RANDMAX 100
 
 class Base{
 public:
@@ -65,7 +64,7 @@ void Base::print(){
 void Base::verify(){
     for (int i=0; i<size-1;++i)
         assert(data[i+1]-data[i]>=0);
-    std::cout<<"\nPassed verification .. :)\n";
+    std::cout<<"\nPassed verification .. :)\n\n";
 }
 
 #endif /* end of include guard BASE_H */

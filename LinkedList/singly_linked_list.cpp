@@ -19,10 +19,10 @@ Node::Node(int _key){
     next = nullptr;
 }
 
-
 class SLL{
 public:
-    size_t size=0;
+    size_t size;
+    SLL();
     void push_back(int);
     void push_front(int);
     void pop_back();
@@ -31,10 +31,14 @@ public:
     void print();
     bool empty();
     void sort();
-
 private:
-    Node *head = nullptr;
+    Node *head;
 };
+
+SLL::SLL(){
+    size = 0;
+    head = nullptr;
+}
 
 void SLL::push_back(int key){
     ++size;
@@ -118,49 +122,20 @@ bool SLL::empty(){
 }
 
 void SLL::sort(){
-    Node *_head=nullptr;
-    Node *_current=nullptr;
-    Node *_prev=nullptr;
-
-    while (!empty()){
-        int _key = head->key;
-        pop_front();
-
-        if (_head==nullptr){
-            _head = new Node(_key);
-        }
-        else{
-            _current = _head; 
-            while( _current !=nullptr & _key > _current->key){
-
-                _current = _current->next;
-                
-            }
-            
-        }
-
-
-
-    }
+    std::cout << "Yet to be implemented!!!\n";
 }
-
-
-using std::cout;
-using std::endl;
 
 int main(){
 
     SLL  sll;
-    /* for (int i =0; i<10;++i) */
-    /*     sll.push_front(i); */
-    /* sll.push_front(-1); */
-    /* sll.push_front(-2); */
+    for (int i =0; i<10;++i)
+        sll.push_front(i);
+    sll.push_front(-1);
+    sll.push_front(-2);
     
-    /* sll.print(); */
-    /* sll.clear(); */
-    /* sll.print(); */
-
-    sll.sort();
+    sll.print();
+    sll.clear();
+    sll.print();
 
     return 0;
 }

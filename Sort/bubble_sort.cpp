@@ -28,16 +28,17 @@ void BSort::sort(){
 
 int main(){
     
-    BSort srt(51);
+    BSort srt;
 
-    std::cout << "Initial data ..\n";
+    // Print initial data
+    std::cout << "Initial data:\n";
     srt.print();
 
+    // Sort, print and verify
     srt.sort();
-    srt.verify();
-
-    std::cout << "\nAfter Bubble sort ..\n";
+    std::cout << "\nAfter Bubble sort:\n";
     srt.print();
+    srt.verify();
     
     return 0;
 }

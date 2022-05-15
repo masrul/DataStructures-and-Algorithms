@@ -14,7 +14,7 @@ public:
 };
 
 void RSort::sort(){
-    std::vector<std::queue<int>> bins(10,std::queue<int>());
+    std::vector< std::queue<int> > bins(10,std::queue<int>());
 
     // find max and it's number of digits 
     int max=data[0];
@@ -48,14 +48,15 @@ int main(){
     
     RSort srt;
 
-    std::cout << "Initial data ..\n";
+    // Print initial data
+    std::cout << "Initial data:\n";
     srt.print();
 
+    // Sort, print and verify
     srt.sort();
-    srt.verify();
-
-    std::cout << "\nAfter Radix sort ..\n";
+    std::cout << "\nAfter Radix sort:\n";
     srt.print();
+    srt.verify();
     
     return 0;
 }

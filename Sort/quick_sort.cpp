@@ -43,21 +43,19 @@ void QSort::sort(){
     quick_sort(0,size-1);
 }
 
-
 int main(){
 
     QSort srt;
 
-    std::cout << "Initial data ..\n";
+    // Print initial data
+    std::cout << "Initial data:\n";
     srt.print();
 
+    // Sort, print and verify
     srt.sort();
-    srt.verify();
-
-    std::cout << "\nAfter Quick sort ..\n";
+    std::cout << "\nAfter Quick sort:\n";
     srt.print();
-    
-    return 0;
+    srt.verify();
     
     return 0;
 }

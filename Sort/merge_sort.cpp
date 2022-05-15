@@ -83,19 +83,19 @@ void MSort::merge(int start,int mid, int end){
     merge_sort(0,size-1);
  }
 
-
 int main(){
     
-    MSort srt(51);
+    MSort srt;
 
-    std::cout << "Initial data ..\n";
+    // Print initial data
+    std::cout << "Initial data:\n";
     srt.print();
 
+    // Sort, print and verify
     srt.sort();
-    srt.verify();
-
-    std::cout << "\nAfter Merge sort ..\n";
+    std::cout << "\nAfter Merge sort:\n";
     srt.print();
+    srt.verify();
     
     return 0;
 }

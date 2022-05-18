@@ -8,8 +8,8 @@ int binary_search(const std::vector<int> &data, int key, int start, int end){
             return mid;
         else if (key>data[mid]) 
             return binary_search(data,key,mid+1,end);
-        else return 
-            binary_search(data,key,start,mid-1);
+        else 
+            return binary_search(data,key,start,mid-1);
     }
     return -1;
 }

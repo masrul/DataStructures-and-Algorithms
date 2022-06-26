@@ -38,31 +38,23 @@ void MSort::merge(int start,int mid, int end){
      while (nl < lsize && nr<rsize){
          if (*left <  *right){
              sorted_data[n] = *left;
-             ++left;
-             ++nl;
-             ++n;
+             ++left, ++nl, ++n;
          }else{
              sorted_data[n] = *right;
-             ++right;
-             ++nr;
-             ++n;
+             ++right, ++nr, ++n;
          }
      }
 
     // Collect remaing of left, if any
      while (nl<lsize){
          sorted_data[n] = *left;
-         ++left;
-         ++nl;
-         ++n;
+         ++left, ++nl, ++n;
      }
 
     // Collect remaing of right, if any
      while (nr<rsize){
          sorted_data[n] = *right;
-         ++right;
-         ++nr;
-         ++n;
+         ++right, ++nr, ++n;
      }
 
      // copy to main array 
